@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout>
+	<brands_index_index>
+		<reference name="content">			
+			<block type="brands/index" name="brands.index.custom" template="brands/index.phtml"/>
+		</reference>
+	</brands_index_index>
+        
+        <brands_index_name>
+		<reference name="content">			
+			<block type="brands/name" name="brands.name.custom" template="brands/name.phtml"/>
+		</reference>
+	</brands_index_name>
+                        
+</layout>

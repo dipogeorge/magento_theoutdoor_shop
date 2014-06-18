@@ -1,0 +1,11 @@
+<h1>Our Brands</h1>
+<?php 
+    
+    //echo '<pre>';
+    //print_r($this->getInfo());
+    foreach($this->getInfo() as $brand){
+
+        echo $brand['brand_name'].'<br/>';
+    }
+    
+?>

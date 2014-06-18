@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    
+        <modules>
+                <Tos_Customerprice>
+                        <version>0.1.0</version>
+                </Tos_Customerprice>
+        </modules>
+        
+	<global>
+                
+                <events>
+		
+                    <checkout_cart_product_add_after>
+		    
+                        <observers>
+			
+                            <tos_customerprice>
+			    
+                                <class>Tos_Customerprice_Model_Observer</class>
+				
+                                <method>priceChange</method>
+				
+                                <type>singleton</type>
+
+                            </tos_customerprice >
+
+                        </observers>
+
+                    </checkout_cart_product_add_after>
+
+                </events>
+		
+	</global>
+    
+</config>

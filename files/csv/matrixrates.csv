@@ -1,0 +1,3 @@
+Country,Region/State,City,Zip/Postal Code From,Zip/Postal Code To,Weight From,Weight To,Shipping Price,Delivery Type
+GB,*,*,*,*,0,1.75,4.99,Standard
+GB,*,*,*,*,1.75,9999999,0,Free Delivery

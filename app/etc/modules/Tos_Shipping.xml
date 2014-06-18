@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+* Developer: Dipo George
+* Module Name: Tos_Shipping
+* category: Shipping/ Carriage charge
+* @copyright Copyright (c) 2014 The OutdoorShop. (http://www.theoutdoorshop.com)
+-->
+
+<config>
+
+  <modules>
+
+    <Tos_Shipping>
+        
+      <active>true</active>
+      
+      <codePool>local</codePool>
+      
+    </Tos_Shipping>
+    
+  </modules>
+  
+</config>
+

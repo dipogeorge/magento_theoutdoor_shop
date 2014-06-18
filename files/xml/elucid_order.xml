@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<DTD_ORDER>
+<OrderHead>
+<Method>WEB</Method>
+<OrderReferences>100000003</OrderReferences>
+<Buyer>UNKNOWN</Buyer>
+<ExternalCustomerCode>CU00002</ExternalCustomerCode>
+<OrderDate>12/06/2014</OrderDate>
+<InvoiceTitle></InvoiceTitle>
+<InvoiceInitials>Dipo</InvoiceInitials>
+<InvoiceSurname>George</InvoiceSurname>
+<InvoicePosition></InvoicePosition>
+<InvoiceCompany></InvoiceCompany>
+<InvoicePostCode>TE5 7ER</InvoicePostCode>
+<InvoiceAddress>123 Test Street</InvoiceAddress>
+<InvoiceCity>Milton Keynes</InvoiceCity>
+<InvoiceCounty>Bedfordshire</InvoiceCounty>
+<InvoiceCountry>GB</InvoiceCountry>
+<InvoicePhone>01234 567890</InvoicePhone>
+<InvoiceFax></InvoiceFax>
+<InvoiceEmail>dipo@theoutdoorshop.com</InvoiceEmail>
+<CustomerRef></CustomerRef>
+<OrdDelChrgGross>10.00</OrdDelChrgGross>
+<OrdDelChrgNet></OrdDelChrgNet>
+<OrdDelChrgTax></OrdDelChrgTax>
+<OrdTotalGross>637.55</OrdTotalGross>
+<OrdTotalNet>605.77</OrdTotalNet>
+<OrdTotalTax>21.78</OrdTotalTax>
+<OrdDiscPercent></OrdDiscPercent>
+<OrdDiscValue>0</OrdDiscValue>
+<OrderSource>WEB</OrderSource>
+<Currency>GBP</Currency>
+<Allow_Mailshot>F</Allow_Mailshot>
+<Allow_Recipient_Mail>F</Allow_Recipient_Mail>
+<Allow_Mail>F</Allow_Mail>
+<OrderRecipient>
+<RecipientDelivery>1</RecipientDelivery>
+<RecipientOrderType />
+<RecipientTitle>Mr</RecipientTitle>
+<RecipientInitials>Dipo</RecipientInitials>
+<RecipientSurname>George</RecipientSurname>
+<RecipientPosition />
+<RecipientAddressRef>MAIN</RecipientAddressRef>
+<RecipientCompany />
+<RecipientAddress></RecipientAddress>
+<RecipientCity>Leighton Buzzard</RecipientCity>
+<RecipientCounty></RecipientCounty>
+<RecipientPhone>01525853691</RecipientPhone>
+<RecipientPostCode>LU7 3DZ</RecipientPostCode>
+<RecipientCountry>GB</RecipientCountry>
+<RecipientMessage></RecipientMessage>
+<RecipientOpenMessage></RecipientOpenMessage>
+<RecipientDelMessage></RecipientDelMessage>
+<RecipientDelChrgGross>10.0000</RecipientDelChrgGross>
+<RecipientDelChrgNet></RecipientDelChrgNet>
+<RecipientDelChrgTax></RecipientDelChrgTax>
+<RecipientCarrier>PF#</RecipientCarrier>
+<RecipientCarrierService>PF48#</RecipientCarrierService>
+<RecipientArrivalDate>12/06/2014</RecipientArrivalDate>
+<RecipientDespatchDate />
+<RecipientCarrierFixed>FIXED</RecipientCarrierFixed>
+<OrderLine>
+<LineNumber>1</LineNumber>
+<Product>PN9134</Product>
+<CustomerPart></CustomerPart>
+<Quantity>2.0000</Quantity>
+<Price>54.44</Price>
+<DiscValue></DiscValue>
+<LineTotalGross>108.88</LineTotalGross>
+<LineTotalNet>87.10</LineTotalNet>
+<LineTotalTax>21.78</LineTotalTax>
+<Personalisation></Personalisation>
+</OrderLine>
+<OrderLine>
+<LineNumber>2</LineNumber>
+<Product>PN9118</Product>
+<CustomerPart></CustomerPart>
+<Quantity>1.0000</Quantity>
+<Price>35.00</Price>
+<DiscValue></DiscValue>
+<LineTotalGross>35.00</LineTotalGross>
+<LineTotalNet>35.00</LineTotalNet>
+<LineTotalTax>0.00</LineTotalTax>
+<Personalisation></Personalisation>
+</OrderLine>
+<OrderLine>
+<LineNumber>3</LineNumber>
+<Product>PN9117</Product>
+<CustomerPart></CustomerPart>
+<Quantity>2.0000</Quantity>
+<Price>43.52</Price>
+<DiscValue></DiscValue>
+<LineTotalGross>87.04</LineTotalGross>
+<LineTotalNet>87.04</LineTotalNet>
+<LineTotalTax>0.00</LineTotalTax>
+<Personalisation></Personalisation>
+</OrderLine>
+<OrderLine>
+<LineNumber>4</LineNumber>
+<Product>PN4506</Product>
+<CustomerPart></CustomerPart>
+<Quantity>5.0000</Quantity>
+<Price>74.97</Price>
+<DiscValue></DiscValue>
+<LineTotalGross>374.85</LineTotalGross>
+<LineTotalNet>374.85</LineTotalNet>
+<LineTotalTax>0.00</LineTotalTax>
+<Personalisation></Personalisation>
+</OrderLine>
+</OrderRecipient>
+<OrderPayment>
+<CardType></CardType>
+<CardNumber></CardNumber>
+<IssueNumber></IssueNumber>
+<ExpiryDate></ExpiryDate>
+<IssueDate></IssueDate>
+<Amount></Amount>
+<AuthCode></AuthCode>
+<AuthMessage></AuthMessage>
+<AuthStatus></AuthStatus>
+</OrderPayment>
+</OrderHead>
+</DTD_ORDER>

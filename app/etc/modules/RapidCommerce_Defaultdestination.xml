@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+* Developer: Dipo George
+* Module Name: RapidCommerce_Defaultdestination
+* category: Shipping/ Carriage charge Display
+* @copyright Copyright (c) 2014 The OutdoorShop. (http://www.theoutdoorshop.com)
+-->
+
+<config>
+
+  <modules>
+
+    <RapidCommerce_Defaultdestination>
+        
+      <active>true</active>
+      
+      <codePool>local</codePool>
+      
+    </RapidCommerce_Defaultdestination>
+    
+  </modules>
+  
+</config>
+

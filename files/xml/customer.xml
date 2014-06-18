@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<Customers>
+<Customer>
+<customer><![CDATA[CU100001]]></customer>
+<title><![CDATA[Dr]]></title>
+<initials><![CDATA[Test]]></initials>
+<full_name><![CDATA[Test]]></full_name>
+<company_name><![CDATA[]]></company_name>
+<main_address><![CDATA[The Outdoor Shop, 27-31 High Street, Stony Stratford]]></main_address>
+<main_city><![CDATA[Milton Keynes]]></main_city>
+<main_county><![CDATA[]]></main_county>
+<main_postcode><![CDATA[MK11 1AA]]></main_postcode>
+<main_country><![CDATA[UK]]></main_country>
+<phone_day><![CDATA[01234567890]]></phone_day>
+<phone_eve><![CDATA[]]></phone_eve>
+<mobile><![CDATA[]]></mobile>
+<fax><![CDATA[]]></fax>
+<email_address>sales@sales.com</email_address>
+<cust_type><![CDATA[RETAIL]]></cust_type>
+<cust_source><![CDATA[MEMBPEND]]></cust_source>
+</Customer>
+</Customers>
+</root>
