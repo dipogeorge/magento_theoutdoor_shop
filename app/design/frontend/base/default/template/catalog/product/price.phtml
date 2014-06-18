@@ -1,0 +1,165 @@
+<?php
+
+//$login = Mage::getSingleton( 'customer/session' )->isLoggedIn(); //Check if User is Logged In
+//if($login)
+//{
+//$groupId = Mage::getSingleton('customer/session')->getCustomerGroupId(); //Get Customers Group ID
+//}
+//else{
+//    
+//    echo 'NOT LOGGED IN!';
+//}
+
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+
+<?php
+/**
+ * Template for displaying product price in different places (products grid, product view page etc)
+ *
+ * @see Mage_Catalog_Block_Product_Abstract
+ */
+?>
+<?php
+$_coreHelper = $this->helper('core');
+$_weeeHelper = $this->helper('weee');
+$_taxHelper = $this->helper('tax');
+/* @var $_coreHelper Mage_Core_Helper_Data */
+/* @var $_weeeHelper Mage_Weee_Helper_Data */
+/* @var $_taxHelper Mage_Tax_Helper_Data */
+
+$_product = $this->getProduct();
+$_storeId = $_product->getStoreId();
+$_store = $_product->getStore();
+$_id = $_product->getId();
+$_weeeSeparator = '';
+$_simplePricesTax = ($_taxHelper->displayPriceIncludingTax() || $_taxHelper->displayBothPrices());
+$_minimalPriceValue = $_product->getMinimalPrice();
+$_minimalPriceValue = $_store->roundPrice($_store->convertPrice($_minimalPriceValue));
+$_minimalPrice = $_taxHelper->getPrice($_product, $_minimalPriceValue, $_simplePricesTax);
+$_convertedFinalPrice = $_store->roundPrice($_store->convertPrice($_product->getFinalPrice()));
+$_specialPriceStoreLabel = $this->getProductAttribute('special_price')->getStoreLabel();
+$product_info = Mage::getModel('catalog/product')->loadByAttribute('sku', $_product->sku);
+$groupId = Mage::getSingleton('customer/session')->getCustomerGroupId();
+
+Mage::getSingleton('core/session')->setGroupId($groupId);
+//echo '<pre>';
+//echo $_product->sku;
+//exit;
+?>
+
+<?php if (!$_product->isGrouped()): ?>
+    <?php $_weeeTaxAmount = $_weeeHelper->getAmountForDisplay($_product); ?>
+    <?php $_weeeTaxAttributes = $_weeeHelper->getProductWeeeAttributesForRenderer($_product, null, null, null, true); ?>
+    <?php $_weeeTaxAmountInclTaxes = $_weeeTaxAmount; ?>
+    <?php if ($_weeeHelper->isTaxable()): ?>
+        <?php $_weeeTaxAmountInclTaxes = $_weeeHelper->getAmountInclTaxes($_weeeTaxAttributes); ?>
+    <?php endif; ?>
+    <?php $_weeeTaxAmount = $_store->roundPrice($_store->convertPrice($_weeeTaxAmount)); ?>
+    <?php $_weeeTaxAmountInclTaxes = $_store->roundPrice($_store->convertPrice($_weeeTaxAmountInclTaxes)); ?>
+
+    <div class="price-box">
+        SRP Price: <span style="color: #f00">&pound;<?php echo $product_info->srp_price; ?></span>
+        <br/>
+    <?php if($groupId == 4){?>
+        
+    <?php if($product_info->clear_price > 0){ ?>
+        CLEARANCE: <span style="color: #080">&pound;<?php echo number_format($product_info->clear_price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice($product_info->clear_price);
+                Mage::getSingleton('core/session')->setBMCPrice('');
+                Mage::getSingleton('core/session')->setContractPrice('');
+                Mage::getSingleton('core/session')->setOurPrice('');
+
+            ?>
+    <?php }
+          else{?>
+        BMC Price: <span style="color: #080">&pound;<?php echo number_format($product_info->bmc_price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice('');
+                Mage::getSingleton('core/session')->setBMCPrice($product_info->bmc_price);
+                Mage::getSingleton('core/session')->setContractPrice('');
+                Mage::getSingleton('core/session')->setOurPrice('');
+
+            ?>
+    <?php    
+        }        
+    } 
+    elseif($groupId == 4){ ?>
+        
+    <?php if($product_info->clear_price > 0){ ?>
+        CLEARANCE: <span style="color: #080">&pound;<?php echo number_format($product_info->clear_price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice($product_info->clear_price);
+                Mage::getSingleton('core/session')->setBMCPrice('');
+                Mage::getSingleton('core/session')->setContractPrice('');
+                Mage::getSingleton('core/session')->setOurPrice('');
+
+            ?>
+    <?php }
+         else{?>
+        Contract Price: <span style="color: #080">&pound;<?php echo number_format($product_info->contract_price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice('');
+                Mage::getSingleton('core/session')->setBMCPrice('');
+                Mage::getSingleton('core/session')->setContractPrice($product_info->contract_price);
+                Mage::getSingleton('core/session')->setOurPrice('');
+
+            ?>
+    <?php 
+        }
+    } 
+    else {?>
+    <?php if($product_info->clear_price > 0){?>
+        CLEARANCE: <span style="color: #080">&pound;<?php echo number_format($product_info->clear_price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice($product_info->clear_price);
+                Mage::getSingleton('core/session')->setBMCPrice('');
+                Mage::getSingleton('core/session')->setContractPrice('');
+                Mage::getSingleton('core/session')->setOurPrice('');
+
+            ?>
+    <?php }
+          else{ ?>
+        Our Price: <span style="color: #080">&pound;<?php echo number_format($product_info->price, 2, '.', ','); ?></span>
+            <?php 
+
+                Mage::getSingleton('core/session')->setClearPrice('');
+                Mage::getSingleton('core/session')->setBMCPrice('');
+                Mage::getSingleton('core/session')->setContractPrice('');
+                Mage::getSingleton('core/session')->setOurPrice($product_info->price);
+
+            ?>
+    <?php    
+        }    
+    } ?>
+    </div>    
+<?php endif; /* if (!$_product->isGrouped()): */ ?>

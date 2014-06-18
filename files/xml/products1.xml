@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<Products>
+<Product>
+<Supplier><![CDATA[OSH]]></Supplier>
+<Supplier_Name><![CDATA[Lyon Equipment Ltd]]></Supplier_Name>
+<Family><![CDATA[Footwear]]></Family>
+<Part_Number><![CDATA[PN10005]]></Part_Number>
+<Master_Part><![CDATA[]]></Master_Part>
+<Weight><![CDATA[3.000000]]></Weight>
+<Tax_Code><![CDATA[]]></Tax_Code>
+<Supplier_Part><![CDATA[]]></Supplier_Part>
+<Description><![CDATA[Olympus Mons Evo]]></Description>
+<Colour><![CDATA[]]></Colour>
+<Size><![CDATA[]]></Size>
+<Trade_Price><![CDATA[]]></Trade_Price>
+<SRP><![CDATA[720.000000]]></SRP>
+<Our_Price><![CDATA[612.000000]]></Our_Price>
+<BMC><![CDATA[]]></BMC>
+<Contract><![CDATA[]]></Contract>
+<Clearance><![CDATA[]]></Clearance>
+<Free_Stock><![CDATA[]]></Free_Stock>
+</Product>
+<Product>
+<Supplier><![CDATA[OSH]]></Supplier>
+<Supplier_Name><![CDATA[Lyon Equipment Ltd]]></Supplier_Name>
+<Family><![CDATA[Footwear]]></Family>
+<Part_Number><![CDATA[PN10005010010]]></Part_Number>
+<Master_Part><![CDATA[PN10005]]></Master_Part>
+<Weight><![CDATA[3.000000]]></Weight>
+<Tax_Code><![CDATA[]]></Tax_Code>
+<Supplier_Part><![CDATA[SP290]]></Supplier_Part>
+<Description><![CDATA[Olympus Mons Evo  size 47]]></Description>
+<Colour><![CDATA[Black]]></Colour>
+<Size><![CDATA[Small]]></Size>
+<Trade_Price><![CDATA[375.000000]]></Trade_Price>
+<SRP><![CDATA[720.000000]]></SRP>
+<Our_Price><![CDATA[612.000000]]></Our_Price>
+<BMC><![CDATA[550.800000]]></BMC>
+<Contract><![CDATA[535.500000]]></Contract>
+<Clearance><![CDATA[]]></Clearance>
+<Free_Stock><![CDATA[10.0000]]></Free_Stock>
+</Product>
+<Product>
+<Supplier><![CDATA[OSH]]></Supplier>
+<Supplier_Name><![CDATA[Lyon Equipment Ltd]]></Supplier_Name>
+<Family><![CDATA[Footwear]]></Family>
+<Part_Number><![CDATA[PN10005010020]]></Part_Number>
+<Master_Part><![CDATA[PN10005]]></Master_Part>
+<Weight><![CDATA[3.000000]]></Weight>
+<Tax_Code><![CDATA[T1]]></Tax_Code>
+<Supplier_Part><![CDATA[SP290]]></Supplier_Part>
+<Description><![CDATA[Olympus Mons Evo Black/Yellow Size 44]]></Description>
+<Colour><![CDATA[Black]]></Colour>
+<Size><![CDATA[Medium]]></Size>
+<Trade_Price><![CDATA[375.000000]]></Trade_Price>
+<SRP><![CDATA[720.000000]]></SRP>
+<Our_Price><![CDATA[612.000000]]></Our_Price>
+<BMC><![CDATA[550.800000]]></BMC>
+<Contract><![CDATA[535.500000]]></Contract>
+<Clearance><![CDATA[]]></Clearance>
+<Free_Stock><![CDATA[10.0000]]></Free_Stock>
+</Product>
+<Product>
+<Supplier><![CDATA[OSH]]></Supplier>
+<Supplier_Name><![CDATA[Lyon Equipment Ltd]]></Supplier_Name>
+<Family><![CDATA[Footwear]]></Family>
+<Part_Number><![CDATA[PN10005010030]]></Part_Number>
+<Master_Part><![CDATA[PN10005]]></Master_Part>
+<Weight><![CDATA[3.000000]]></Weight>
+<Tax_Code><![CDATA[T1]]></Tax_Code>
+<Supplier_Part><![CDATA[SP290]]></Supplier_Part>
+<Description><![CDATA[Olympus Mons Evo Black/Yellow size 42]]></Description>
+<Colour><![CDATA[Red]]></Colour>
+<Size><![CDATA[Extra Small]]></Size>
+<Trade_Price><![CDATA[375.000000]]></Trade_Price>
+<SRP><![CDATA[720.000000]]></SRP>
+<Our_Price><![CDATA[612.000000]]></Our_Price>
+<BMC><![CDATA[550.800000]]></BMC>
+<Contract><![CDATA[535.500000]]></Contract>
+<Clearance><![CDATA[]]></Clearance>
+<Free_Stock><![CDATA[20.0000]]></Free_Stock>
+</Product>
+</Products>
+</root>

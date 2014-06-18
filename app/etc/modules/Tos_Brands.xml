@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Developer: Dipo George
+* Developer URL: 
+* Module Name:
+* Module URL:
+* category:
+* package:
+* @copyright Copyright (c) 2014 The OutdoorShop. (http://www.theoutdoorshop.com)
+**/
+-->
+<config>
+	<modules>
+		<Tos_Brands>
+			<codePool>local</codePool>
+			<active>true</active>
+			<version>0.1.0</version>
+		</Tos_Brands>
+	</modules>
+</config>

@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<config>
+    
+        <modules>
+                <Tos_Brands>
+                        <version>0.1.0</version>
+                </Tos_Brands>
+        </modules>
+        
+	<global>
+                
+                <!-- <template>
+                    <email>
+                        <custom_email_template module="SampleModule1">
+                            <label>Recycle LCD Confirmation</label>
+                            <file>brands_confirmation.html</file>
+                            <type>html</type>
+                        </custom_email_template>
+                    </email>
+                </template> -->
+
+            
+                <helpers>
+			<brands>
+				<class>Tos_Brands_Helper</class>
+			</brands>
+                </helpers>
+            
+		<blocks>
+			<brands>
+				<class>Tos_Brands_Block</class>
+			</brands>
+		</blocks>
+                
+                <models>
+                    
+                        <brands>
+                                <class>Tos_Brands_Model</class>
+                                <resourceModel>brands_mysql4</resourceModel>
+                        </brands>
+                        
+                        <brands_mysql4>
+                                        <class>Tos_Brands_Model_Mysql4</class>                                        
+                                         <entities>
+                                                <brands>
+                                                    <table>brands</table>
+                                                </brands>
+                                         </entities>
+                        </brands_mysql4>
+                          
+                </models>
+                
+                <resources>                    
+			<brands_setup>
+				<setup>
+					<module>Tos_Brands</module>
+					<class>Tos_Brands_Model_Resource_Mysql4_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</brands_setup>
+                    
+                        <brands_write>
+                                <connection>
+                                    <use>core_write</use>
+                                </connection>
+                        </brands_write>
+                        
+                       <brands_read>
+                                <connection>
+                                    <use>core_read</use>
+                                </connection>
+                       </brands_read>
+                       
+                </resources>
+                
+	</global>
+
+	<frontend>
+		<routers>
+			<brands>
+				<use>standard</use>
+				<args>
+					<module>Tos_Brands</module>
+					<frontName>brands</frontName>
+				</args>
+			</brands>
+		</routers>
+
+		<layout>
+			<updates>
+				<brands>
+					<file>brands.xml</file>
+				</brands>
+			</updates>
+		</layout>
+	</frontend>
+        
+        <admin>
+            <routers>
+                <brands>
+                    <use>admin</use>
+                    <args>
+                        <module>Tos_Brands</module>
+                        <frontName>brands</frontName>
+                    </args>
+                </brands>
+            </routers>
+        </admin>
+	
+    <adminhtml>
+        <menu>
+            <catalog>
+                <children>
+                    <list translate="title" module="brands">
+                        <title>Mange Brands</title>
+                        <sort_order>15</sort_order>
+			<action>brands/adminhtml_brands</action>
+                    </list>
+                </children>
+            </catalog>
+        </menu>
+    </adminhtml>
+</config>

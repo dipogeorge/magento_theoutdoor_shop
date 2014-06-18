@@ -1,0 +1,5 @@
+Country,Region/State,City,Zip/Postal Code From,Zip/Postal Code To,Order Subtotal From,Order Subtotal To,Shipping Price,Delivery Type
+GB,*,*,*,*,0,30,4.99,Standard Delivery
+GB,*,*,*,*,30.01,9999999.99,0,Free Delivery
+GB,*,*,*,*,0,9999999.99,10,24Hr Next Working Day
+GB,*,*,*,*,0,9999999.99,20,Next Working Day - 12pm

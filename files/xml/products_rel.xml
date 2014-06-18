@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<Products>
+<Product>
+<Part><![CDATA[PN10005]]></Part>
+<Related><![CDATA[PN11040]]></Related>
+</Product>
+<Product>
+<Part><![CDATA[PN10005]]></Part>
+<Related><![CDATA[PN8866]]></Related>
+</Product>
+<Product>
+<Part><![CDATA[PN8866]]></Part>
+<Related><![CDATA[PN10005]]></Related>
+</Product>
+<Product>
+<Part><![CDATA[PN11040]]></Part>
+<Related><![CDATA[PN10005]]></Related>
+</Product>
+</Products>
+</root>
