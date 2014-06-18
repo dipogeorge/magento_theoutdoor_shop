@@ -1,5 +1,5 @@
 <?php
-//DEVELOPER: DIPO GEORGE
+
 /**
  * Magento
  *
