@@ -1,5 +1,5 @@
 <?php
-//ADDED 18-06-2014 15:11 - Dipo
+//ADDED 18-06-2014 15:11 - Dipo George
 /**
  * Magento
  *
